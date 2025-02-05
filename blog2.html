@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how anyone can start coding with Python today">
+    <title>Python for the Non-Programmer: How Anyone Can Start Coding Today</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+</head>
+
+<body>
+    <div id="circle-animation-container"></div>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">MH</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-section="home"><i
+                            class="fas fa-home"></i><span>HOME</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#resume" class="nav-link" data-section="resume"><i
+                            class="fas fa-file-alt"></i><span>RESUME</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#portfolio" class="nav-link" data-section="portfolio"><i
+                            class="fas fa-briefcase"></i><span>PORTFOLIO</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link" data-section="blog"><i
+                            class="fas fa-blog"></i><span>BLOG</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link" data-section="contact"><i
+                            class="fas fa-envelope"></i><span>CONTACT</span></a>
+                </li>
+                <li class="nav-item mobile-social-icons">
+                    <a href="https://www.linkedin.com/in/muhammadhasib/" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/hasib_me_" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/me.muhammad.hasib" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/muhamadhasib" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-github"></i></a>
+                </li>
+            </ul>
+            <div class="navbar-right">
+                <i class="fas fa-shopping-cart cart-icon" aria-label="Cart" id="cart-icon"></i>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+    </nav>
+    <main id="main-content">
+        <article class="blog-post">
+            <div class="blog-close-btn">
+                <a href="index.html#blog" aria-label="Close blog post">
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <header class="blog-header">
+                <h1>Python for the Non-Programmer: How Anyone Can Start Coding Today</h1>
+                <div class="blog-meta">
+                    <span class="blog-category">PROGRAMMING</span>
+                    <span class="blog-date">August 15, 2024</span>
+                </div>
+            </header>
+
+            <div class="blog-content">
+                <img src="images/blog2.png" alt="Python coding on a computer screen" class="blog-image">
+
+                <h2>Introduction to Python</h2>
+
+                <p>Python has become increasingly popular in recent years, and for good reason! If you're new to programming, the thought of diving into coding might seem daunting. But let me assure you, Python is often recommended for beginners because it's friendly, easy to read, and versatile. Imagine being able to create a small program to automate a task or analyze data without having years of coding experience. Sounds great, right? Let's explore how you can start your coding journey with Python today!</p>
+
+                <h2>Why Choose Python?</h2>
+
+                <h3>User-Friendly Syntax</h3>
+                <p>Python's syntax is designed to be clean and easy to understand. Think of it as reading English; this makes it less intimidating for beginners. For instance, if you wanted to print "Hello, World!" on your screen, you simply write:</p>
+                <pre><code class="language-python">print("Hello, World!")</code></pre>
+
+                <h3>Versatility</h3>
+                <p>This language is not just for web development; it's used in data science, artificial intelligence, automation, and more. This versatility means you're not just learning code for the sake of it—you're equipping yourself with skills applicable in many fields.</p>
+
+                <h3>Strong Community Support</h3>
+                <p>As a beginner, there's nothing quite as comforting as knowing you have support. Python has a rich community filled with people willing to help out. Websites like Stack Overflow or the Python community forums are just a click away. Plus, countless tutorials and courses are available online, often for free!</p>
+
+                <h2>Getting Started: The Basics of Python</h2>
+
+                <h3>Installing Python</h3>
+                <p>Getting started is easier than you think! Here's how you do it:</p>
+                <ol>
+                    <li>Go to the official Python website.</li>
+                    <li>Download the latest version that matches your operating system.</li>
+                    <li>Follow the straightforward installation instructions.</li>
+                </ol>
+
+                <h3>Setting Up Your First Program</h3>
+                <p>Once Python is installed, you can start coding right away! Use a simple text editor or an integrated development environment (IDE) like IDLE, which comes with Python. Create a new file, enter the "Hello, World!" code from earlier, and save the file with a .py extension.</p>
+
+                <h3>Running Your Code</h3>
+                <p>To run your code:</p>
+                <ol>
+                    <li>Open your command line or terminal.</li>
+                    <li>Navigate to the folder where your file is located.</li>
+                    <li>Type <code>python your_file_name.py</code> and hit enter.</li>
+                </ol>
+                <p>Congratulations! You've just run your first Python program!</p>
+
+                <h2>Understanding the Basics of Programming</h2>
+
+                <h3>Variables and Data Types</h3>
+                <p>Variables are like boxes where you can store information for later use. In Python, you don't need to declare a variable's type explicitly. For example:</p>
+                <pre><code class="language-python">name = "Alice"
+age = 30</code></pre>
+                <p>In this case, <code>name</code> is a string (text), and <code>age</code> is an integer (whole number). Understanding variables is essential, as they will be the building blocks of your programs.</p>
+
+                <h3>Control Statements</h3>
+                <p>Control statements allow your program to make decisions based on conditions. For example, if you want to check if someone is an adult or not, you'd use an if statement:</p>
+                <pre><code class="language-python">if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are not an adult.")</code></pre>
+
+                <h3>Loops</h3>
+                <p>Loops allow you to repeat actions without writing the same code multiple times. For example, if you want to print numbers from 1 to 5, a loop is ideal:</p>
+                <pre><code class="language-python">for i in range(1, 6):
+    print(i)</code></pre>
+
+                <h2>Practical Applications of Python</h2>
+
+                <h3>Data Analysis</h3>
+                <p>With libraries like Pandas and NumPy, Python makes data manipulation easy. If you have a dataset you want to analyze, these tools can help you make sense of it without advanced mathematical knowledge.</p>
+
+                <h3>Automating Tasks</h3>
+                <p>Have you ever wanted to save time by automating repetitive tasks? Python can help with that! For instance, you can write a script to rename files in a folder, saving you from manual work.</p>
+
+                <h3>Creating Simple Games</h3>
+                <p>Learning can be fun, and what better way to engage than by creating a simple game? Using libraries like Pygame, you can start developing fun projects, even as a beginner.</p>
+
+                <h2>Learning Resources</h2>
+
+                <h3>Online Courses and Tutorials</h3>
+                <p>There are countless free and paid resources available. Websites like Codecademy, Coursera, and Udemy offer Python courses that cater to all levels.</p>
+
+                <h3>Books</h3>
+                <ul>
+                    <li>"Automate the Boring Stuff with Python" by Al Sweigart is a great read.</li>
+                    <li>"Python Crash Course" by Eric Matthes is another excellent book to consider.</li>
+                </ul>
+
+                <h3>Practice Platforms</h3>
+                <p>Once you feel ready, try your hand at coding challenges on platforms like LeetCode or HackerRank, where you can practice with real problems.</p>
+
+                <h2>Conclusion</h2>
+                <p>Learning Python might seem challenging at first, but remember that every expert was once a beginner. Take it one step at a time, utilize the wealth of resources at your disposal, and don't hesitate to ask for help. You might just surprise yourself with what you can create! So why not give it a shot? Start coding today and unlock a world of possibilities!</p>
+            </div>
+            <section class="comment-section" aria-label="Comments">
+                <h2>Leave a Comment</h2>
+                <div id="comments-container"></div>
+                <form id="comment-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="comment-name">Name:</label>
+                            <input type="text" id="comment-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment-email">Email:</label>
+                            <input type="email" id="comment-email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment-content">Comment:</label>
+                        <textarea id="comment-content" required></textarea>
+                    </div>
+                    <button type="submit">Submit Comment</button>
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 All rights reserved by Muhammad Hasib.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+
+</html>

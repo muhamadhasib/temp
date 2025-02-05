@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Website Project - A showcase of web design skills">
+    <title>Portfolio Website Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="circle-animation-container"></div>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">MH</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-section="home"><i
+                            class="fas fa-home"></i><span>HOME</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#resume" class="nav-link" data-section="resume"><i
+                            class="fas fa-file-alt"></i><span>RESUME</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#portfolio" class="nav-link" data-section="portfolio"><i
+                            class="fas fa-briefcase"></i><span>PORTFOLIO</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link" data-section="blog"><i
+                            class="fas fa-blog"></i><span>BLOG</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link" data-section="contact"><i
+                            class="fas fa-envelope"></i><span>CONTACT</span></a>
+                </li>
+                <li class="nav-item mobile-social-icons">
+                    <a href="https://www.linkedin.com/in/muhammadhasib/" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/hasib_me_" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/me.muhammad.hasib" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/muhamadhasib" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-github"></i></a>
+                </li>
+            </ul>
+            <div class="navbar-right">
+                <i class="fas fa-shopping-cart cart-icon" aria-label="Cart" id="cart-icon"></i> 
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <article class="blog-post">
+            <div class="blog-close-btn">
+                <a href="index.html#portfolio" aria-label="Close blog post">
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <header class="blog-header">
+                <h1>Portfolio Website Project</h1>
+                <div class="blog-meta">
+                    <span class="blog-category">WEB DESIGN</span>
+                    <time class="blog-date" datetime="2024-08-01">August 2024</time>
+                </div>
+            </header>
+
+            <div class="blog-content">
+                <img src="images/project1.png" alt="Portfolio Website Project" class="blog-image">
+
+                <h2>Project Overview</h2>
+                <p>This portfolio website project showcases my skills in web design and development. It's a responsive, modern website that effectively presents my work, skills, and professional information to potential clients and employers.</p>
+
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Responsive design that works seamlessly on desktop, tablet, and mobile devices</li>
+                    <li>Clean and modern user interface with intuitive navigation</li>
+                    <li>Portfolio section to showcase my best work with project details</li>
+                    <li>About me section highlighting my skills and experience</li>
+                    <li>Contact form for easy communication</li>
+                    <li>Blog section to share my thoughts and expertise</li>
+                    <li>Dark mode toggle for improved user experience</li>
+                </ul>
+
+                <h2>Technologies Used</h2>
+                <ul>
+                    <li>HTML5 for structure</li>
+                    <li>CSS3 for styling, including Flexbox and Grid for layout</li>
+                    <li>JavaScript for interactivity and dynamic content</li>
+                    <li>Responsive images for optimal loading times</li>
+                    <li>Font Awesome for icons</li>
+                </ul>
+
+                <h2>Challenges and Solutions</h2>
+                <p>One of the main challenges was creating a responsive design that looked great on all devices. I solved this by using a mobile-first approach and employing CSS media queries to adjust the layout for larger screens. Another challenge was implementing the dark mode feature, which I accomplished using CSS variables and JavaScript to toggle between light and dark themes.</p>
+
+                <h2>Results</h2>
+                <p>The final product is a sleek, professional portfolio website that effectively showcases my skills and projects. It has received positive feedback from peers and potential clients, and has helped me secure new opportunities in web development.</p>
+
+                <div class="project-links">
+                    <a href="https://github.com/muhamadhasib/portfolio" class="button">View Source Code</a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 All rights reserved by Muhammad Hasib.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

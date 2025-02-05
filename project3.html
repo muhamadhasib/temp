@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChatGPT Clone (Light Version) - A simplified AI chat interface">
+    <title>ChatGPT Clone (Light Version)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="circle-animation-container"></div>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">MH</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-section="home"><i
+                            class="fas fa-home"></i><span>HOME</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#resume" class="nav-link" data-section="resume"><i
+                            class="fas fa-file-alt"></i><span>RESUME</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#portfolio" class="nav-link" data-section="portfolio"><i
+                            class="fas fa-briefcase"></i><span>PORTFOLIO</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link" data-section="blog"><i
+                            class="fas fa-blog"></i><span>BLOG</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link" data-section="contact"><i
+                            class="fas fa-envelope"></i><span>CONTACT</span></a>
+                </li>
+                <li class="nav-item mobile-social-icons">
+                    <a href="https://www.linkedin.com/in/muhammadhasib/" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/hasib_me_" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/me.muhammad.hasib" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/muhamadhasib" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-github"></i></a>
+                </li>
+            </ul>
+            <div class="navbar-right">
+                <i class="fas fa-shopping-cart cart-icon" aria-label="Cart" id="cart-icon"></i> 
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <article class="blog-post">
+            <div class="blog-close-btn">
+                <a href="index.html#portfolio" aria-label="Close blog post">
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <header class="blog-header">
+                <h1>ChatGPT Clone (Light Version)</h1>
+                <div class="blog-meta">
+                    <span class="blog-category">WEB DEVELOPMENT</span>
+                    <time class="blog-date" datetime="2024-11-01">November 2024</time>
+                </div>
+            </header>
+
+            <div class="blog-content">
+                <img src="images/project3.png" alt="ChatGPT Clone (Light Version)" class="blog-image">
+
+                <h2>Project Overview</h2>
+                <p>This project is a lightweight version of the ChatGPT interface, designed to demonstrate my frontend development skills and ability to create intuitive user interfaces. It focuses on the visual and interactive aspects of a chat application without the complexity of AI integration.</p>
+
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Clean and intuitive chat interface inspired by ChatGPT</li>
+                    <li>Responsive design for optimal viewing on all devices</li>
+                    <li>Message input area with send button</li>
+                    <li>Simulated chat responses for demonstration purposes</li>
+                    <li>Message history display with alternating user and "AI" messages</li>
+                    <li>Smooth scrolling to the latest message</li>
+                </ul>
+
+                <h2>Technologies Used</h2>
+                <ul>
+                    <li>HTML5 for structure</li>
+                    <li>CSS3 for styling, including Flexbox for layout</li>
+                    <li>JavaScript for interactivity and simulated responses</li>
+                    <li>LocalStorage for persisting chat history</li>
+                    <li>Responsive design techniques for cross-device compatibility</li>
+                </ul>
+
+                <h2>Challenges and Solutions</h2>
+                <p>The main challenge was creating a responsive layout that mimics the ChatGPT interface while ensuring it works well on various screen sizes. I solved this using a combination of Flexbox and media queries. Another challenge was implementing smooth scrolling to the latest message, which I addressed using JavaScript to manipulate the scroll position of the chat container.</p>
+
+                <h2>Results</h2>
+                <p>The final product is a visually appealing and interactive chat interface that demonstrates my frontend development skills. While it doesn't include actual AI functionality, it serves as a proof of concept for UI design and user experience in chat applications.</p>
+
+                <div class="project-links">
+                    <a href="#" class="button">View Source Code</a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 All rights reserved by Muhammad Hasib.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
