@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Hasib - Web Designer & Developer Portfolio</title>
+    <meta name="description"
+        content="Explore the portfolio of Muhammad Hasib, an experienced web designer and developer specializing in Python, JavaScript, and responsive web design.">
+    <meta name="keywords" content="web design, web development, Python, JavaScript, portfolio, Muhammad Hasib">
+    <meta name="author" content="Muhammad Hasib">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Open Graph tags for better social media sharing -->
+    <meta property="og:title" content="Muhammad Hasib - Web Designer & Developer Portfolio">
+    <meta property="og:description"
+        content="Explore the portfolio of Muhammad Hasib, an experienced web designer and developer specializing in Python, JavaScript, and responsive web design.">
+    <meta property="og:image" content="https://www.muhammadhasib.com/images/profile.png">
+    <meta property="og:url" content="https://www.muhammadhasib.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@hasib_me_">
+    <meta name="twitter:title" content="Muhammad Hasib - Web Designer & Developer Portfolio">
+    <meta name="twitter:description"
+        content="Explore the portfolio of Muhammad Hasib, an experienced web designer and developer specializing in Python, JavaScript, and responsive web design.">
+    <meta name="twitter:image" content="https://www.muhammadhasib.com/images/profile.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        as="style">
+
+    <!-- Add structured data for better SEO -->
+    <script type="application/ld+json">
+
+    </script>
+</head>
+
+<body>
+    <div id="circle-animation-container"></div>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">MH</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-section="home"><i
+                            class="fas fa-home"></i><span>HOME</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#resume" class="nav-link" data-section="resume"><i
+                            class="fas fa-file-alt"></i><span>RESUME</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#portfolio" class="nav-link" data-section="portfolio"><i
+                            class="fas fa-briefcase"></i><span>PORTFOLIO</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link" data-section="blog"><i
+                            class="fas fa-feather"></i><span>BLOG</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link" data-section="contact"><i
+                            class="fas fa-envelope"></i><span>CONTACT</span></a>
+                </li>
+                <li class="nav-item mobile-social-icons">
+                    <a href="https://www.linkedin.com/in/muhammadhasib/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/hasib_me_" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/me.muhammad.hasib" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/muhamadhasib" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i
+                            class="fab fa-github"></i></a>
+                </li>
+            </ul>
+            <div class="navbar-right">
+                <i class="fas fa-shopping-cart cart-icon" aria-label="Shopping cart" id="cart-icon"></i> <!-- Cart icon added -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="mobile-menu" aria-label="Toggle mobile menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+    </nav>
+
+    <main id="main-content">
+        <section id="home" class="content-wrapper">
+            <div class="home-content">
+                <div class="info-section">
+                    <div class="home-text-block">
+                        <h1 class="greeting"><span class="greeting-hi">Hi, I'm</span> <span
+                                class="greeting-name">Muhammad Hasib</span></h1>
+                        <p class="subtitle">I am a dedicated Computer Science and Engineering student with a passion for
+                            developing innovative software solutions. I am proficient in Python and JavaScript and
+                            actively engage in freelance work and personal projects to expand my expertise and explore
+                            new technologies.</p>
+                        <ul class="home-contact-info">
+                            <li><i class="fas fa-envelope"></i> <a
+                                    href="mailto:muhammadhasib.me@gmail.com">muhammadhasib.me@gmail.com</a></li>
+                            <li><i class="fas fa-map-marker-alt"></i> <a
+                                    href="https://maps.app.goo.gl/yQE4dgyo6vEVHVqk6" target="_blank"
+                                    rel="noopener noreferrer">Dhaka, Bangladesh.</a></li>
+                        </ul>
+                        <div class="buttons">
+                            <a id="downloadCV" class="nav-link"><i class="fas fa-download"></i> DOWNLOAD CV</a>
+                            <a href="#contact" id="contactMe" class="nav-link"><i class="fas fa-paper-plane"></i> CONTACT ME</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-section">
+                    <div class="image-container">
+                        <img src="images/profile.png" alt="Muhammad Hasib working on a laptop">
+                        <div class="floating-card">
+                            <i class="fas fa-code"></i>
+                            <span>Full Stack Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="content-wrapper">
+            <h2 class="section-title">My Resume</h2>
+            <p class="section-subtitle">OVER 2 YEARS OF EXPERIENCE</p>
+            <div class="resume-content">
+                <div class="resume-column">
+                    <h3>Work Experience</h3>
+                    <div class="timeline-item">
+                        <h4>Freelance Web Designer & Developer</h4>
+                        <p class="timeline-date">2022 - Present</p>
+                        <p>Working on various marketplaces including Fiverr and Upwork. Successfully completed multiple
+                            projects for international clients, receiving recognition for high-quality work.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Junior Web Developer</h4>
+                        <p class="timeline-date">2021 - 2022</p>
+                        <p>Worked on front-end development projects at a startup, with a strong focus on responsive
+                            design and improving user experience.</p>
+                    </div>
+                </div>
+                <div class="resume-column">
+                    <h3>Education</h3>
+                    <div class="timeline-item">
+                        <h4>BSc in Computer Science and Engineering</h4>
+                        <p class="timeline-date">2023 - 2027</p>
+                        <p>I am pursuing a CSE degree at the National University of Bangladesh. Focusing on software
+                            engineering, data structures and algorithms, database management, AI, and system design.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Web Development Bootcamp</h4>
+                        <p class="timeline-date">2021</p>
+                        <p>Completed an intensive 6-month program at Programming Hero, mastering full-stack web
+                            development technologies and best practices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Development Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>HTML/CSS</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>JAVASCRIPT</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>PYTHON</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>REACT JS</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>NODE JS</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="70%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>PHOTOSHOP</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>ILLUSTRATOR</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>ADOBE XD</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>FIGMA</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>GIT/GITHUB</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="content-wrapper">
+            <h2 class="section-title">My Portfolio</h2>
+            <p class="section-subtitle">CHECK OUT SOME OF MY WORK</p>
+            <div class="portfolio-container">
+                <div class="portfolio-column">
+                    <article class="portfolio-card">
+                        <a href="project1.html">
+                            <div class="portfolio-content">
+                                <div class="portfolio-image">
+                                    <img src="images/project1.png" alt="Project 1">
+                                </div>
+                                <h3 class="portfolio-title">Portfolio Website</h3>
+                                <span class="view-project-button">VIEW PROJECT</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="portfolio-column">
+                    <article class="portfolio-card">
+                        <a href="project2.html">
+
+                            <div class="portfolio-content">
+                                <div class="portfolio-image">
+                                    <img src="images/project2.png" alt="Project 2">
+                                </div>
+                                <h3 class="portfolio-title">ChatGPT Clone</h3>
+                                <span class="view-project-button">VIEW PROJECT</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="portfolio-column">
+                    <article class="portfolio-card">
+                        <a href="project3.html">
+                            <div class="portfolio-content">
+                                <div class="portfolio-image">
+                                    <img src="images/project3.png" alt="Project 3">
+                                </div>
+                                <h3 class="portfolio-title">ChatGPT Clone (Light Version)</h3>
+                                <span class="view-project-button">VIEW PROJECT</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="content-wrapper">
+            <h2 class="section-title">My Blogs</h2>
+            <p class="section-subtitle">VISIT MY BLOG AND KEEP YOUR FEEDBACK</p>
+            <div class="blog-container">
+                <div class="blog-column">
+                    <article class="blog-card">
+                        <a href="blog1.html">
+
+                            <div class="blog-content">
+                                <div class="blog-image">
+                                    <img src="images/blog1.png" alt="Python projects" class="blog-image">
+                                </div>
+                                <span class="blog-category">DEVELOPMENT</span>
+                                <h3 class="blog-title">10 Easy Python Projects for Beginners You Can Start Today</h3>
+                                <time class="blog-date" datetime="2024-09-03">September 03, 2024</time>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="blog-column">
+                    <article class="blog-card">
+                        <a href="blog2.html">
+
+                            <div class="blog-content">
+                                <div class="blog-image">
+                                    <img src="images/blog2.png" alt="Python coding on a computer screen" class="blog-image">
+                                </div>
+                                <span class="blog-category">PROGRAMMING</span>
+                                <h3 class="blog-title">Python for the Non-Programmer: How Anyone Can Start Coding Today
+                                </h3>
+                                <time class="blog-date" datetime="2024-08-15">August 15, 2024</time>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="blog-column">
+                    <article class="blog-card">
+                        <a href="blog3.html">
+
+                            <div class="blog-content">
+                                <div class="blog-image">
+                                    <img src="images/blog3.png" alt="Python programming resources" class="blog-image">
+                                </div>
+                                <span class="blog-category">PROGRAMMING</span>
+                                <h3 class="blog-title">Top 5 Python Resources for Absolute Beginners (That Are Actually
+                                    Fun)</h3>
+                                <time class="blog-date" datetime="2024-08-17">August 17, 2024</time>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+            <div class="blog-button-container">
+                <a href="blog.html" class="read-more-button">More Blogs ➜</a>
+            </div>
+        </section>
+
+        <section id="newsletter">
+            <h2 class="section-title">Newsletter</h2>
+            <p class="section-subtitle">STAY UPDATED WITH MY LATEST THOUGHTS</p>
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text-container">
+                        <p class="newsletter-text">
+                            Every Friday, I send out an editorial email newsletter packed with useful tips and
+                            techniques on Python, JavaScript, and front-end development. Subscribe and get the latest
+                            insights, best practices, and coding tricks delivered right to your inbox!
+                        </p>
+                    </div>
+                    <div class="newsletter-form-container">
+                        <form id="newsletter-form">
+                            <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                            <button type="submit">SUBSCRIBE ➜</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-wrapper">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">FEEL FREE TO GET IN TOUCH WITH ME.</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Muhammad Hasib</h3>
+                    <p>Web Designer & Developer. Available for freelance work. Connect with me via email or phone.</p>
+                    <div class="contact-info-link">
+                        <p><i class="fas fa-phone"></i> <a href="tel:+8801716232557">+880 1716-232557</a></p>
+                        <p><i class="fas fa-envelope"></i> <a
+                                href="mailto:muhammadhasib.me@gmail.com">muhammadhasib.me@gmail.com</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/yQE4dgyo6vEVHVqk6"
+                                target="_blank" rel="noopener noreferrer">Dhaka, Bangladesh</a></p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/muhammadhasib/" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/hasib_me_" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/me.muhammad.hasib" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/muhamadhasib" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit">SEND MESSAGE ➜</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 All rights reserved by Muhammad Hasib.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
